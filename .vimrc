@@ -33,6 +33,8 @@ set nowrap
 
 let g:NERDTreeDirArrows=0
 
+" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+" vim +BundleInstall +qall
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
