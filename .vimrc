@@ -2,6 +2,7 @@ colorscheme torte
 
 "call pathogen#infect()
 "call pathogen#helptags()
+execute pathogen#infect()
 
 set mouse=a
 set ts=2
@@ -23,6 +24,7 @@ filetype plugin indent on
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_disabled_filetypes = ['html']
+let g:syntastic_javascript_checkers = ['jslint']
 let mapleader=","
 
 " fold method
