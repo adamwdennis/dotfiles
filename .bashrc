@@ -1,6 +1,6 @@
 export NO_HIPCHAT=1
 export WORKSPACE=/Users/adamwdennis/slashjoin
-export PATH=/usr/local/bin:/Users/adam.dennis/slashjoin/node/bin:/Users/adam.dennis/slashjoin/node_modules/.bin:$PATH:.
+export PATH=/usr/local/bin:/Users/adam.dennis/slashjoin/node/bin:/Users/adam.dennis/slashjoin/node_modules/.bin:Applications/Xcode.app/Contents/Developer/usr/bin:$PATH:.
 alias mysql=/usr/local/bin/mysql
 alias vim=/usr/bin/vim
 alias vi=vim
