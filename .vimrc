@@ -1,9 +1,5 @@
 colorscheme torte
 
-"call pathogen#infect()
-"call pathogen#helptags()
-execute pathogen#infect()
-
 set mouse=a
 set ts=2
 set expandtab
@@ -35,10 +31,10 @@ set nowrap
 
 let g:NERDTreeDirArrows=0
 
-" git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-" vim +BundleInstall +qall
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+"vim +BundleInstall +qall
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Bundles
 Bundle 'airblade/vim-gitgutter'
@@ -53,7 +49,8 @@ Bundle 'tpope/vim-commentary'
 Bundle 'mileszs/ack.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
-Bundle 'kien/ctrlp.vim'
+
+call vundle#end()
 
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\v[\/](haproxy-1.4.20|node_modules|yui-compressor|.git|cover_html)$'

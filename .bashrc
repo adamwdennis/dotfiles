@@ -5,7 +5,6 @@ alias mysql=/usr/local/bin/mysql
 alias vim=/usr/bin/vim
 alias vi=vim
 alias vows=~/slashjoin/node_modules/vows/bin/vows
-source ~/.nvm/nvm.sh
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
   }
