@@ -1,4 +1,2 @@
-dotfiles
-========
+# Initial page
 
-dotfiles
