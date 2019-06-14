@@ -1,6 +1,6 @@
 export NO_HIPCHAT=1
 export WORKSPACE=/Users/adamwdennis/slashjoin
-export PATH=/usr/local/bin:/Users/adam.dennis/slashjoin/node/bin:/Users/adam.dennis/slashjoin/node_modules/.bin:Applications/Xcode.app/Contents/Developer/usr/bin:$PATH:.
+export PATH=/usr/local/bin:/Users/adam.dennis/slashjoin/node/bin:/Users/adam.dennis/slashjoin/node_modules/.bin:Applications/Xcode.app/Contents/Developer/usr/bin:$PATH:~/Library/Python/2.7/bin:.
 alias mysql=/usr/local/bin/mysql
 alias vim=/usr/bin/vim
 alias vi=vim
@@ -8,7 +8,7 @@ alias vows=~/slashjoin/node_modules/vows/bin/vows
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
   }
-PS1="\\[$(tput setaf 7)\\]\\w \$(parse_git_branch)> \\[$(tput sgr0)\\]"
+PS1="\\[$(tput setaf 7)\\]\\w \$(parse_git_branch)> \\[$(tput sgr0)\\] \[$(~/.iterm2/it2setkeylabel set status "\$(parse_git_branch)")\]"
 
 alias cds='cd ~/slashjoin'
 alias goinstant='echo -e "\033];GoInstant\007";cds; server.dev.js'
@@ -26,7 +26,7 @@ alias ls='ls -G'
 #enables color in the terminal bash shell export
 CLICOLOR=1
 #sets up the color scheme for list export
-LSCOLORS=gxfxcxdxbxegedabagacad
+LSCOLORS=ecfxcxdxbxegedabagacad
 #enables color for iTerm
 export TERM=xterm-color
 
@@ -53,3 +53,11 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[ -f /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash ] && . /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash
