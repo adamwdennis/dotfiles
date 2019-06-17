@@ -1,4 +1,5 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [dotfiles](README.md)
+* [CHANGELOG.md](changelog.md.md)
 
